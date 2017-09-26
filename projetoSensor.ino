@@ -50,6 +50,7 @@ void setup() {
 
 void loop() {
   sensorUltrassonico();
+  sensorLed();
 }
 
 void sensorUltrassonico() {
@@ -117,3 +118,23 @@ void coordenadasGPS() {
     }
   }
 }
+
+void sensorLed() {
+  int estado = analogRead(0);  //Lê o valor fornecido pelo LDR
+
+  // Caso o valor lido na porta analógica seja maior do que
+  // 800, acende o LED
+  // Ajuste o valor abaixo de acordo com o seu circuito
+  Serial.print("Sensor Led: ");
+  Serial.print(estado);
+  if (estado < 300) {
+    digitalWrite(portaLed, HIGH);
+    delay(100); //INTERVALO DE 500 MILISSEGUNDOS
+    digitalWrite(portaLed, LOW);
+    delay(100); //INTERVALO DE 500 MILISSEGUNDOS
+  }
+  else {
+    digitalWrite(portaLed, LOW);
+  }
+}
+
