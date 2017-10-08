@@ -4,7 +4,7 @@
 #include <NeoSWSerial.h>
 
 // variáveis
-int tring = 5; // pino TRIG do sensor ultrassônico
+int tring = 7; // pino TRIG do sensor ultrassônico
 int echo = 6; // pino ECHO do sensor ultrassônico
 float tempo; // para armazenar o tempo de ida e volta do sinal em microsegundos
 float distancia_cm; // para armazenar a distância em centímetros
