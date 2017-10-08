@@ -41,7 +41,7 @@ void setup() {
 
   pinMode(tring, OUTPUT);
   pinMode(pinBuzzer, OUTPUT);
-  pinMode(pinBuzzer, OUTPUT);
+  pinMode(portaLed, OUTPUT);
   // deixa pino em LOW
   digitalWrite(tring, LOW);
   delayMicroseconds(10);
