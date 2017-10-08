@@ -9,6 +9,7 @@ int echo = 6; // pino ECHO do sensor ultrassônico
 float tempo; // para armazenar o tempo de ida e volta do sinal em microsegundos
 float distancia_cm; // para armazenar a distância em centímetros
 
+const int portaLed = 5;
 const int pinBuzzer = 3;
 const int chipSelect = 4;
 
