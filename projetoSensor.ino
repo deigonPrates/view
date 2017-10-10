@@ -67,7 +67,7 @@ void sensorUltrassonico() {
   distancia_cm = (tempo / 29.4) / 2;
 
   // aguardar um pouquinho antes de começar tudo de novo
-  delay(500);
+  delay(100);
 
   // apresentar resultados no display LCD
   Serial.print("Distancia: ");
