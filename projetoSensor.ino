@@ -74,7 +74,7 @@ void sensorUltrassonico() {
   Serial.print(distancia_cm);
   Serial.println(" cm");
 
-  if (distancia_cm <= 80 && distancia_cm > 3) {
+  if (distancia_cm <= 140 && distancia_cm > 3) {
     buzzer();
     coordenadasGPS();
   }
